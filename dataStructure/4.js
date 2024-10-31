@@ -2,19 +2,14 @@ function depthFirstSearch(graph, startVertex) {
   const visited = {};
   const result = [];
 
-  function dfs(vertex) {
-    if (!vertex) return;
+  (function dfs(vertex) {
+    if (!vertex || visited[vertex]) return;
     visited[vertex] = true;
     result.push(vertex);
 
-    graph.adjacencyList[vertex].forEach((neighbor) => {
-      if (!visited[neighbor]) {
-        dfs(neighbor);
-      }
-    });
-  }
+    graph.adjacencyList[vertex].forEach((neighbor) => dfs(neighbor));
+  })(startVertex);
 
-  dfs(startVertex);
   return result;
 }
 
