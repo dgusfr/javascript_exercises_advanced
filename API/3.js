@@ -2,7 +2,6 @@ function filterUsersByCountry(users, country) {
   return users.filter((user) => user.address.country === country);
 }
 
-// Exemplo de uso:
 const users = [
   { id: 1, name: "John Doe", address: { country: "USA" } },
   { id: 2, name: "Jane Smith", address: { country: "Canada" } },
