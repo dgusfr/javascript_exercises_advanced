@@ -4,7 +4,7 @@ class Set {
   }
 
   add(element) {
-    if (!this.items[element]) {
+    if (!this.has(element)) {
       this.items[element] = element;
       return true;
     }
@@ -12,7 +12,7 @@ class Set {
   }
 
   remove(element) {
-    if (this.items[element]) {
+    if (this.has(element)) {
       delete this.items[element];
       return true;
     }
@@ -20,7 +20,7 @@ class Set {
   }
 
   has(element) {
-    return this.items.hasOwnProperty(element);
+    return element in this.items;
   }
 }
 
