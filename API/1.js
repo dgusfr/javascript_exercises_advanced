@@ -12,5 +12,4 @@ async function fetchRandomJoke() {
   }
 }
 
-// Exemplo de uso:
 fetchRandomJoke().then((joke) => console.log(joke));
