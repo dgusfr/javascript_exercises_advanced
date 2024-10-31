@@ -8,7 +8,6 @@ async function fetchMultipleData(urls) {
   }
 }
 
-// Exemplo de uso:
 const apiUrls = [
   "https://api.coindesk.com/v1/bpi/currentprice.json",
   "https://api.spacexdata.com/v4/launches/latest",
