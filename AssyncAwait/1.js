@@ -11,6 +11,5 @@ async function fetchData(url) {
   }
 }
 
-// Exemplo de uso:
 const apiUrl = "https://api.coindesk.com/v1/bpi/currentprice.json";
 fetchData(apiUrl).then((data) => console.log(data));
