@@ -12,7 +12,6 @@ async function handleApiError(requestFunction, maxAttempts) {
   }
 }
 
-// Exemplo de uso:
 async function fetchWithRetry() {
   const url = "https://official-joke-api.appspot.com/random_joke";
   return fetch(url).then((response) => {
