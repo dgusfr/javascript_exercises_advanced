@@ -11,7 +11,6 @@ async function fetchDataWithErrorHandling(url) {
   }
 }
 
-// Exemplo de uso:
 const apiUrlWithErrorHandling =
   "https://api.coindesk.com/v1/bpi/currentprice.json";
 fetchDataWithErrorHandling(apiUrlWithErrorHandling)
