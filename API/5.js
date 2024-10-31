@@ -15,7 +15,6 @@ async function fetchProtectedData(url, token) {
   }
 }
 
-// Exemplo de uso:
 const apiUrl = "https://api.protected.com/data";
 const token = "your-auth-token";
 fetchProtectedData(apiUrl, token).then((data) => console.log(data));
