@@ -8,7 +8,6 @@ function parseUserData(rawUserData) {
   };
 }
 
-// Exemplo de uso:
 const rawUserData = {
   id: 1,
   first_name: "John",
